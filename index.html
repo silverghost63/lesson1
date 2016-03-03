@@ -1,61 +1,60 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<meta charset="utf-8" />
 	<title>Заголовок</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<link rel="stylesheet" href="css/main.css" />
+	<meta name="viewport" content="width=970" />
+	<link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
 	
 	<div class="loader">
-		<div class="loader_inner"></div>
+		<div class="loader__inner"></div>
 	</div>
 	
-	<div id="bgImage"></div>
+	<div class="image-background"></div>
 
-	<section class="big-background">
-		<div id="bgndVideo" class="player" data-property="{videoURL:'https://www.youtube.com/watch?v=hthh1PyQ8m4',containment:'body',autoPlay:true, mute:true, startAt:0, opacity:1}"></div>
+	<section class="section">
+		<div id="bgndVideo" class="section__video player" data-property="{videoURL:'https://www.youtube.com/watch?v=hthh1PyQ8m4',containment:'body',autoPlay:true, mute:true, startAt:0, opacity:1}"></div>
 
-		<div class="pattern"></div> 
-			<div class="big-background-container">
-				<div class="container-image">
-					<img src="./images/rain.jpg" />
-					<div class="container-description">	
-						<h1>Географические рекорды</h1>
-						<hr noshade />
-						<h3>Наибольшее количество осадков</h3>
-						<table cellpadding="0" cellspacing="0">
-							<thead>
-								<tr>
-									<th>Местность</th>
-									<th>Дата</th>
-									<th>мм</th
-								</tr>
-							</thead>
-							<tbody>
-								<tr>
-									<td>Африка</td>									
-									<td>13 сентября 1922</td>
-									<td>21</td>
-								</tr>
-								<tr>
-									<td>Азия</td>									
-									<td>22 июня 1942</td>
-									<td>20</td>
-								</tr>
-								<tr>
-									<td>Америка</td>									
-									<td>22 июня 1942</td>
-									<td>13</td>
-								</tr>								
-							</tbody>
-						</table>
-							<a href="https://ru.wikipedia.org/wiki/%D0%9F%D0%BE%D0%B3%D0%BE%D0%B4%D0%BD%D1%8B%D0%B5_%D1%80%D0%B5%D0%BA%D0%BE%D1%80%D0%B4%D1%8B" target="_blank">wikipedia</a>
-					</div>
+		<div class="section__pattern"></div> 
+			<div class="container">
+				<div class="container__image-wrap">
+					<img class="container__image-wrap--image" src="./images/rain.jpg" alt="Background" />
 				</div>				
-								 
+				<div class="container__description">	
+					<h1>Географические рекорды</h1>
+					<hr class="container__delimiter" />
+					<h3>Наибольшее количество осадков</h3>
+					<table class="container__table">
+						<thead>
+							<tr>
+								<th class="container__table--cell">Местность</th>
+								<th class="container__table--cell">Дата</th>
+								<th class="container__table--cell">мм</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td class="container__table--cell">Африка</td>									
+								<td class="container__table--cell">13 сентября 1922</td>
+								<td class="container__table--cell">21</td>
+							</tr>
+							<tr>
+								<td class="container__table--cell">Азия</td>									
+								<td class="container__table--cell">22 июня 1942</td>
+								<td class="container__table--cell">20</td>
+							</tr>
+							<tr>
+								<td class="container__table--cell">Америка</td>									
+								<td class="container__table--cell">22 июня 1942</td>
+								<td class="container__table--cell">13</td>
+							</tr>								
+						</tbody>
+					</table>
+						<a class="link" href="https://ru.wikipedia.org/wiki/%D0%9F%D0%BE%D0%B3%D0%BE%D0%B4%D0%BD%D1%8B%D0%B5_%D1%80%D0%B5%D0%BA%D0%BE%D1%80%D0%B4%D1%8B" target="_blank">wikipedia</a>
+				</div>								 
 			</div>                                                   
 	</section>  
 	

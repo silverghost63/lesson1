@@ -3,7 +3,7 @@ $(document).ready(function() {
 	setTimeout(
   function() 
   {
-    $(".container-description").css("right", "-485px");
+    $(".container__description").css("right", "-485px");
   }, 1000);	
 	
 
